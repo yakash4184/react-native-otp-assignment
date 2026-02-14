@@ -1,5 +1,8 @@
 # React Native OTP Assignment (TypeScript)
 
+[![CI/CD](https://github.com/yakash4184/react-native-otp-assignment/actions/workflows/ci-cd.yml/badge.svg?branch=main)](https://github.com/yakash4184/react-native-otp-assignment/actions/workflows/ci-cd.yml)
+[![Railway Live](https://img.shields.io/website?url=https%3A%2F%2Freact-native-otp-assignment-production.up.railway.app&label=Railway%20Live)](https://react-native-otp-assignment-production.up.railway.app)
+
 This is a fresh React Native project for your assignment, created in a new folder with clean architecture.
 
 ## Folder Path

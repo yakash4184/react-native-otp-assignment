@@ -139,11 +139,8 @@ It runs:
 Add these GitHub repository secrets (`Settings -> Secrets and variables -> Actions`):
 
 - `RAILWAY_TOKEN`
-- `RAILWAY_PROJECT_ID`
-- `RAILWAY_SERVICE_ID`
-- `RAILWAY_ENVIRONMENT_ID`
 
-After secrets are set, every push to `main` auto-deploys to Railway.
+After this secret is set, every push to `main` auto-deploys to Railway.
 
 ## What GPT helped with vs what was implemented
 

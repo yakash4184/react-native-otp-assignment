@@ -50,6 +50,6 @@ jobs:
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
         run: >
           npx @railway/cli up --ci --detach
-          --project "${{ secrets.RAILWAY_PROJECT_ID }}"
-          --service "${{ secrets.RAILWAY_SERVICE_ID }}"
-          --environment "${{ secrets.RAILWAY_ENVIRONMENT_ID }}"
+          --project "2c11386f-a3fc-4212-a6e2-7ad79e541001"
+          --service "6f1e9be7-c1c5-4763-b088-e9e4aba906bb"
+          --environment "bb0f43ac-4ffb-4443-907c-945292ae77dc"

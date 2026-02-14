@@ -116,6 +116,35 @@ Then press:
 - `a` for Android emulator
 - or scan QR in Expo Go
 
+## GitHub + VS Code Connection
+
+- Git remote is connected to:
+  - `https://github.com/yakash4184/react-native-otp-assignment.git`
+- In VS Code:
+  - Open Command Palette (`Cmd + Shift + P`)
+  - Run `GitHub: Sign in`
+  - Authorize browser login with your `yakash4184` account
+  - Use Source Control tab to commit/push changes
+
+## CI/CD Setup
+
+GitHub Actions workflow is added at:
+
+- `.github/workflows/ci-cd.yml`
+
+It runs:
+- CI on PR and push to `main`: install, typecheck, web build
+- CD on push to `main`: deploy to Railway
+
+Add these GitHub repository secrets (`Settings -> Secrets and variables -> Actions`):
+
+- `RAILWAY_TOKEN`
+- `RAILWAY_PROJECT_ID`
+- `RAILWAY_SERVICE_ID`
+- `RAILWAY_ENVIRONMENT_ID`
+
+After secrets are set, every push to `main` auto-deploys to Railway.
+
 ## What GPT helped with vs what was implemented
 
 - GPT helped with project scaffolding and structuring files quickly.
@@ -123,5 +152,5 @@ Then press:
 
 ## Notes
 
-- In this environment, package download was blocked (`registry.npmjs.org` not reachable), so dependencies were not installed here.
-- Project source is complete; run `npm install` on your machine/network and then `npm start`.
+- If `npm install` times out, retry after setting npm registry:
+  - `npm config set registry https://registry.npmjs.org/`
